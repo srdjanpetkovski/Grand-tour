@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;800;900&display=swap');
 
 /*************
 variables
@@ -169,4 +169,119 @@ services
             font-size: 1.1rem;
         }
     }
+}
+
+/*************
+packages
+*************/
+#packages {
+    .card {
+        position: relative;
+        .fa-tags {
+            color: $white;
+            background: $blue;
+            padding: 4px;
+            position: absolute;
+            top: 120px;
+            left: 175px;
+        }
+        .card-body {
+            span {
+                font-size: 1.2rem;
+                .fas {
+                    color: $blue;
+                }
+            }
+            h5 {
+                font-size: 1.4rem;
+                font-weight: 600;
+                line-height: 1.8;
+            }
+        }
+    }
+    button {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+}
+
+/*************
+book now
+*************/
+#destination {
+    h2 {
+        font-size: 4rem;
+        line-height: 1;
+        margin-bottom: 40px;
+        font-weight: 500;
+    }
+    p  {
+        font-size: 1.3rem;
+        margin-bottom: 40px;
+    }
+    .card {
+        border: 0;
+        border-radius: 0;
+        position: relative;
+        h5 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        .starsImg {
+            background-color: $blue;
+            display: inline-block;
+            position: absolute;
+            top: 95px;
+            left: 140px;
+            i {
+                color: $white;
+            }
+        }
+    }
+}
+
+/*************
+footer
+*************/
+footer {
+    color: $white;
+    background: $gray;
+    h3 {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 1.2;
+    }
+    .footerImg {
+        img {
+            margin-right: 5px;
+        }
+    }
+    form {
+        background: $black;
+        border: 1px solid $white;
+        .form-group {
+            margin-bottom: 0;
+            input {
+                padding: 0 5px;
+                background: $black;
+                border-radius: 0;
+                border: 0;
+                &::placeholder {
+                    color: rgba($white, 0.8);
+                }
+            }
+            button {
+                background: $black;
+                color: $white;
+                padding: 0 5px;
+            }
+        }
+    }
+}
+
+/*************
+bottombar
+*************/
+.bottombar {
+    background: $blue;
 }

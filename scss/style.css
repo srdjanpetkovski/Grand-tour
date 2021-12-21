@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;800;900&display=swap");
 /*************
 variables
 *************/
@@ -156,5 +156,141 @@ services
 
 #services .col-md-4 p {
   font-size: 1.1rem;
+}
+
+/*************
+packages
+*************/
+#packages .card {
+  position: relative;
+}
+
+#packages .card .fa-tags {
+  color: #fff;
+  background: #49bfff;
+  padding: 4px;
+  position: absolute;
+  top: 120px;
+  left: 175px;
+}
+
+#packages .card .card-body span {
+  font-size: 1.2rem;
+}
+
+#packages .card .card-body span .fas {
+  color: #49bfff;
+}
+
+#packages .card .card-body h5 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+#packages button {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/*************
+book now
+*************/
+#destination h2 {
+  font-size: 4rem;
+  line-height: 1;
+  margin-bottom: 40px;
+  font-weight: 500;
+}
+
+#destination p {
+  font-size: 1.3rem;
+  margin-bottom: 40px;
+}
+
+#destination .card {
+  border: 0;
+  border-radius: 0;
+  position: relative;
+}
+
+#destination .card h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+#destination .card .starsImg {
+  background-color: #49bfff;
+  display: inline-block;
+  position: absolute;
+  top: 95px;
+  left: 140px;
+}
+
+#destination .card .starsImg i {
+  color: #fff;
+}
+
+/*************
+footer
+*************/
+footer {
+  color: #fff;
+  background: #5c5c5c;
+}
+
+footer h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+footer .footerImg img {
+  margin-right: 5px;
+}
+
+footer form {
+  background: #000;
+  border: 1px solid #fff;
+}
+
+footer form .form-group {
+  margin-bottom: 0;
+}
+
+footer form .form-group input {
+  padding: 0 5px;
+  background: #000;
+  border-radius: 0;
+  border: 0;
+}
+
+footer form .form-group input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+footer form .form-group input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+footer form .form-group input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+footer form .form-group input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+footer form .form-group button {
+  background: #000;
+  color: #fff;
+  padding: 0 5px;
+}
+
+/*************
+bottombar
+*************/
+.bottombar {
+  background: #49bfff;
 }
 /*# sourceMappingURL=style.css.map */
