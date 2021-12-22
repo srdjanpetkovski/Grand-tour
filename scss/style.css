@@ -46,6 +46,12 @@ nav .navbar-brand:hover {
   color: #0056b3;
 }
 
+nav button i {
+  border: 2px solid #fff;
+  padding: 3px 2px;
+  border-radius: 4px;
+}
+
 nav .nav-item .nav-link:hover {
   color: #000;
 }
@@ -69,12 +75,31 @@ header
   text-align: left;
 }
 
+@media (max-width: 767px) {
+  .carousel-item .carousel-caption {
+    top: 0;
+    text-align: center;
+  }
+}
+
 .carousel-item .carousel-caption h5 {
   font-size: 5rem;
 }
 
+@media (max-width: 767px) {
+  .carousel-item .carousel-caption h5 {
+    font-size: 3rem;
+  }
+}
+
 .carousel-item .carousel-caption p {
   font-size: 1.3rem;
+}
+
+@media (max-width: 767px) {
+  .carousel-item .carousel-caption p {
+    font-size: 0.8rem;
+  }
 }
 
 .carousel-item .carousel-caption button {
@@ -87,6 +112,12 @@ header
   border: 1px solid #fff;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
+}
+
+@media (max-width: 767px) {
+  .carousel-item .carousel-caption button {
+    font-size: 1rem;
+  }
 }
 
 .carousel-item .carousel-caption button:hover {
@@ -139,6 +170,12 @@ services
   margin-bottom: 40px;
 }
 
+@media (max-width: 767px) {
+  #services h2 {
+    font-size: 3rem;
+  }
+}
+
 #services .col-md-4 i {
   font-size: 2rem;
   color: #49bfff;
@@ -161,11 +198,17 @@ services
 /*************
 packages
 *************/
-#packages .card {
+#packages .col-md-3 .card {
   position: relative;
 }
 
-#packages .card .fa-tags {
+@media (max-width: 767px) {
+  #packages .col-md-3 .card {
+    min-width: 100%;
+  }
+}
+
+#packages .col-md-3 .card .fa-tags {
   color: #fff;
   background: #49bfff;
   padding: 4px;
@@ -174,27 +217,66 @@ packages
   left: 175px;
 }
 
-#packages .card .card-body span {
+@media (max-width: 767px) {
+  #packages .col-md-3 .card .fa-tags {
+    top: 200px;
+    left: 300px;
+  }
+}
+
+#packages .col-md-3 .card .card-body span {
   font-size: 1.2rem;
 }
 
-#packages .card .card-body span .fas {
+#packages .col-md-3 .card .card-body span .fas {
   color: #49bfff;
 }
 
-#packages .card .card-body h5 {
+#packages .col-md-3 .card .card-body h5 {
   font-size: 1.4rem;
   font-weight: 600;
   line-height: 1.8;
 }
 
-#packages button {
+#packages .col-md-3 button {
   font-size: 1.3rem;
   font-weight: 600;
 }
 
 /*************
-book now
+trip
+*************/
+.trip {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(/img/slide-palms.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/slide-palms.jpg);
+  background-size: cover;
+  background-position: bottom;
+  background-attachment: fixed;
+  color: #fff;
+  padding: 100px 0;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.trip button {
+  color: #fff;
+  font-size: 1.4rem;
+  padding: 5px 10px;
+  background: transparent;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #fff;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.trip button:hover {
+  background: #5c5c5c;
+  border: none;
+}
+
+/*************
+destination
 *************/
 #destination h2 {
   font-size: 4rem;
@@ -225,6 +307,7 @@ book now
   position: absolute;
   top: 95px;
   left: 140px;
+  padding: 2px;
 }
 
 #destination .card .starsImg i {
